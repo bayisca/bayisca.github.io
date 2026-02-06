@@ -4,26 +4,22 @@ title = 'İsmail Can Anlaş'
 theme = "PaperMod"
 
 [params]
-  # Varsayılan tema ayarı (otomatik karanlık/aydınlık mod)
   defaultTheme = "auto"
 
-  # --- GİRİŞ KARTI (ANA SAYFA) ---
+  # --- GİRİŞ KARTI ---
   [params.homeInfoParams]
     Title = "Merhaba, Ben İsmail 👋"
     Content = "Python ve PyQt6 ile masaüstü uygulamaları geliştiriyorum. Projelerimi ve notlarımı burada paylaşıyorum."
 
-  # --- SOSYAL MEDYA İKONLARI ---
-  # 1. GitHub İkonu
+  # --- SOSYAL MEDYA ---
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/bayisca"
 
-  # 2. LinkedIn İkonu (Varsa linkini düzelt)
   [[params.socialIcons]]
     name = "linkedin"
     url = "https://www.linkedin.com/in/ismail-can-anla%C5%9F-270235242/"
 
-  # 3. E-Posta İkonu (Mail adresini düzelt)
   [[params.socialIcons]]
     name = "email"
     url = "mailto:can2323fb@gmail.com"
