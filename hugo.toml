@@ -6,6 +6,18 @@ theme = "PaperMod"
 [params]
   defaultTheme = "auto"
 
+  # 1. TARAYICI SEKMESİ İKONU (Favicon)
+  [params.assets]
+    favicon = "/logo.jpeg"
+    favicon16x16 = "/logo.jpeg"
+    favicon32x32 = "/logo.jpeg"
+
+# 2. SOL ÜSTTEKİ İSİM YANI İKONU (Label Icon)
+  [params.label]
+    text = "İsmail Can"      # Logunun yanında yazacak isim
+    icon = "/logo.jpeg"       # Logonun adresi
+    iconHeight = 30          # Logonun boyutu 
+
   # --- GİRİŞ KARTI ---
   [params.homeInfoParams]
     Title = "Merhaba, Ben İsmail 👋"
