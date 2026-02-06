@@ -1,6 +1,6 @@
 +++
 date = '2026-02-06T16:16:46+03:00'
-draft = false
+draft = True
 title = 'Akademik Takip Sistemi (ATS) v3.2'
 +++
 
@@ -34,25 +34,6 @@ Bu proje aşağıdaki teknolojiler kullanılarak geliştirilmiştir:
 *   **Arayüz:** PyQt6 (Modern GUI Framework)
 *   **Veri Saklama:** JSON (Yerel depolama)
 
-## 📦 Kurulum
-
-Proje dosyalarını bilgisayarınıza indirdikten sonra, gerekli kütüphaneleri yüklemeniz gerekmektedir.
-
-1.  Python'un yüklü olduğundan emin olun.
-2.  Gerekli kütüphaneyi yükleyin:
-
-```bash
-pip install PyQt6
-```
-
-## ▶️ Kullanım
-
-Uygulamayı başlatmak için proje dizininde terminali açın ve aşağıdaki komutu çalıştırın:
-
-```bash
-python main.py
-```
-
 ## 📂 Proje Yapısı
 
 Proje, kodun yönetilebilirliğini artırmak için modüler bir yapıda tasarlanmıştır:
@@ -62,6 +43,13 @@ Proje, kodun yönetilebilirliğini artırmak için modüler bir yapıda tasarlan
 *   `frontend/`: Kullanıcı arayüzü dosyaları (Pencereler, diyaloglar, stiller).
 *   `assets/`: İkonlar ve görsel kaynaklar.
 *   `data/`: Kullanıcı verilerinin saklandığı dizin (`dersler.json`).
+
+## 🖼️ Ekran Görüntüleri
+
+![ATS Projesi Ekran Görüntüsü](/images/ders-ekle.png)
+![ATS Projesi Ekran Görüntüsü](/images/ders-listesi.png)
+![ATS Projesi Ekran Görüntüsü](/images/genel-durum.png)
+![ATS Projesi Ekran Görüntüsü](/images/hakkinda.png)
 
 ## 👨‍💻 Geliştirici
 
