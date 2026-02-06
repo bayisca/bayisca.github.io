@@ -1,10 +1,10 @@
 +++
 date = '2026-02-06T16:16:46+03:00'
 draft = false
-title = 'Ilk Yazim'
+title = 'Akademik Takip Sistemi (ATS) v3.2'
 +++
 
-# Akademik Takip Sistemi (ATS) v3.2
+# Açıklama
 
 Akademik Takip Sistemi (ATS), üniversite öğrencilerinin ders notlarını, ortalamalarını ve akademik başarılarını takip etmelerini sağlayan modern ve kullanıcı dostu bir masaüstü uygulamasıdır. Python ve PyQt6 kullanılarak geliştirilmiştir.
 
