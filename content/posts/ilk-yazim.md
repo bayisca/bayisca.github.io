@@ -47,10 +47,10 @@ Proje, kodun yönetilebilirliğini artırmak için modüler bir yapıda tasarlan
 
 ## 🖼️ Ekran Görüntüleri
 
-![ATS Projesi Ekran Görüntüsü](/images/ders-ekle.png)
 ![ATS Projesi Ekran Görüntüsü](/images/ders-listesi.png)
 ![ATS Projesi Ekran Görüntüsü](/images/genel-durum.png)
 ![ATS Projesi Ekran Görüntüsü](/images/hakkinda.png)
+![ATS Projesi Ekran Görüntüsü](/images/ders-ekle.png)
 
 ## 👨‍💻 Geliştirici
 
