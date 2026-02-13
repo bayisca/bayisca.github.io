@@ -56,7 +56,7 @@ Proje, kodun yönetilebilirliğini artırmak için modüler bir yapıda tasarlan
 
 ATS v3.2 sürümünü bilgisayarınıza indirip anında kullanmaya başlamak için tıklayın:
 
-[🚀 ATS v3.2'yi İndir (Windows .exe)](/ats-guncel.exe)
+[🚀 ATS'yi İndir](/static/Akademik%20Takip%20Sistemi.exe)
 
 *Not: Kurulum gerektirmez, indirip çift tıklamanız yeterlidir. Windows Defender yazısına aldanmayın yine de çalıştıra basın*
 
