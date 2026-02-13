@@ -67,3 +67,5 @@ ATS v3.2 sürümünü bilgisayarınıza indirip anında kullanmaya başlamak iç
 
 ---
 *Not: Bu proje eğitim ve kişisel kullanım amaçlı geliştirilmiştir.*
+
+"Copyright © 2026 İsmail Can Anlaş. All rights reserved. No part of this software may be reproduced or distributed."
