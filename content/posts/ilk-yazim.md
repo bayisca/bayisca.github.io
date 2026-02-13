@@ -58,7 +58,7 @@ ATS v3.2 sürümünü bilgisayarınıza indirip anında kullanmaya başlamak iç
 
 [🚀 ATS v3.2'yi İndir (Windows .exe)](/ats-guncel.exe)
 
-*Not: Kurulum gerektirmez, indirip çift tıklamanız yeterlidir.*
+*Not: Kurulum gerektirmez, indirip çift tıklamanız yeterlidir. Windows Defender yazısına aldanmayın yine de çalıştıra basın*
 
 ## 👨‍💻 Geliştirici
 
