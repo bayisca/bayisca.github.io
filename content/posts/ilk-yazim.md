@@ -52,6 +52,14 @@ Proje, kodun yönetilebilirliğini artırmak için modüler bir yapıda tasarlan
 ![ATS Projesi Ekran Görüntüsü](/images/hakkinda.png)
 ![ATS Projesi Ekran Görüntüsü](/images/ders-ekle.png)
 
+## 📥 Uygulamayı İndir
+
+ATS v3.2 sürümünü bilgisayarınıza indirip anında kullanmaya başlamak için tıklayın:
+
+[🚀 ATS v3.2'yi İndir (Windows .exe)](/ats-guncel.exe)
+
+*Not: Kurulum gerektirmez, indirip çift tıklamanız yeterlidir.*
+
 ## 👨‍💻 Geliştirici
 
 * **Geliştirici:** İsmail Can Anlaş
