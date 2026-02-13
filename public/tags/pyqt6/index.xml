@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PyQt6 on İsmail Can Anlaş</title>
+    <link>https://bayisca.github.io/tags/pyqt6/</link>
+    <description>Recent content in PyQt6 on İsmail Can Anlaş</description>
+    <generator>Hugo -- 0.155.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Feb 2026 16:16:46 +0300</lastBuildDate>
+    <atom:link href="https://bayisca.github.io/tags/pyqt6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Akademik Takip Sistemi (ATS) v3.2</title>
+      <link>https://bayisca.github.io/posts/akademik-takip-sistemi/</link>
+      <pubDate>Fri, 06 Feb 2026 16:16:46 +0300</pubDate>
+      <guid>https://bayisca.github.io/posts/akademik-takip-sistemi/</guid>
+      <description>&lt;h1 id=&#34;açıklama&#34;&gt;Açıklama&lt;/h1&gt;
+&lt;p&gt;Akademik Takip Sistemi (ATS), üniversite öğrencilerinin ders notlarını, ortalamalarını ve akademik başarılarını takip etmelerini sağlayan modern ve kullanıcı dostu bir masaüstü uygulamasıdır. Python ve PyQt6 kullanılarak geliştirilmiştir.&lt;/p&gt;
+&lt;h2 id=&#34;-özellikler&#34;&gt;🚀 Özellikler&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ders Yönetimi:&lt;/strong&gt; Derslerinizi dönem, kredi, not ve tür (Alan/Havuz) bilgileriyle ekleyin, düzenleyin veya silin.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gelişmiş Filtreleme:&lt;/strong&gt; Dersleri döneme veya harf notuna göre anlık olarak filtreleyerek görüntüleyin.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AGNO ve İstatistikler:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Genel Ağırlıklı Not Ortalaması (AGNO/GNO) hesaplama.&lt;/li&gt;
+&lt;li&gt;Toplam kredi takibi.&lt;/li&gt;
+&lt;li&gt;Dönem bazlı ortalama ve başarı grafiği.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sınav Takibi:&lt;/strong&gt; Yaklaşan sınavlarınızı ve kalan gün sayısını &amp;ldquo;Genel Durum&amp;rdquo; ekranında takip edin.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Veri Yönetimi:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Verileri JSON formatında otomatik kaydetme.&lt;/li&gt;
+&lt;li&gt;Yedekleme (Dışa Aktar) ve Geri Yükleme (İçe Aktar) seçenekleri.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PDF Çıktısı:&lt;/strong&gt; Transkript benzeri akademik durum raporu oluşturma.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modern Arayüz:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tokyo Midnight&lt;/strong&gt; temalı karanlık mod.&lt;/li&gt;
+&lt;li&gt;Açık/Koyu tema desteği.&lt;/li&gt;
+&lt;li&gt;Responsive ve estetik tasarım.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-teknolojiler&#34;&gt;🛠️ Teknolojiler&lt;/h2&gt;
+&lt;p&gt;Bu proje aşağıdaki teknolojiler kullanılarak geliştirilmiştir:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Akademik Takip Sistemi (ATS) v3.2 | İsmail Can Anlaş</title>
+<meta name="keywords" content="Python, PyQt6, Projelerim">
+<meta name="description" content="Açıklama
+Akademik Takip Sistemi (ATS), üniversite öğrencilerinin ders notlarını, ortalamalarını ve akademik başarılarını takip etmelerini sağlayan modern ve kullanıcı dostu bir masaüstü uygulamasıdır. Python ve PyQt6 kullanılarak geliştirilmiştir.
+🚀 Özellikler
+
+Ders Yönetimi: Derslerinizi dönem, kredi, not ve tür (Alan/Havuz) bilgileriyle ekleyin, düzenleyin veya silin.
+Gelişmiş Filtreleme: Dersleri döneme veya harf notuna göre anlık olarak filtreleyerek görüntüleyin.
+AGNO ve İstatistikler:
+
+Genel Ağırlıklı Not Ortalaması (AGNO/GNO) hesaplama.
+Toplam kredi takibi.
+Dönem bazlı ortalama ve başarı grafiği.
+
+
+Sınav Takibi: Yaklaşan sınavlarınızı ve kalan gün sayısını &ldquo;Genel Durum&rdquo; ekranında takip edin.
+Veri Yönetimi:
+
+Verileri JSON formatında otomatik kaydetme.
+Yedekleme (Dışa Aktar) ve Geri Yükleme (İçe Aktar) seçenekleri.
+PDF Çıktısı: Transkript benzeri akademik durum raporu oluşturma.
+
+
+Modern Arayüz:
+
+Tokyo Midnight temalı karanlık mod.
+Açık/Koyu tema desteği.
+Responsive ve estetik tasarım.
+
+
+
+🛠️ Teknolojiler
+Bu proje aşağıdaki teknolojiler kullanılarak geliştirilmiştir:">
+<meta name="author" content="">
+<link rel="canonical" href="https://bayisca.github.io/posts/akademik-takip-sistemi/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a29c24210eb31d9ce56f669c66a35c9c51b17376b7764e336a49af7dec914cf0.css" integrity="sha256-opwkIQ6zHZzlb2acZqNcnFGxc3a3dk4zakmvfeyRTPA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bayisca.github.io/logo.jpeg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bayisca.github.io/logo.jpeg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bayisca.github.io/logo.jpeg">
+<link rel="apple-touch-icon" href="https://bayisca.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bayisca.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://bayisca.github.io/posts/akademik-takip-sistemi/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://bayisca.github.io/posts/akademik-takip-sistemi/">
+  <meta property="og:site_name" content="İsmail Can Anlaş">
+  <meta property="og:title" content="Akademik Takip Sistemi (ATS) v3.2">
+  <meta property="og:description" content="Açıklama Akademik Takip Sistemi (ATS), üniversite öğrencilerinin ders notlarını, ortalamalarını ve akademik başarılarını takip etmelerini sağlayan modern ve kullanıcı dostu bir masaüstü uygulamasıdır. Python ve PyQt6 kullanılarak geliştirilmiştir.
+🚀 Özellikler Ders Yönetimi: Derslerinizi dönem, kredi, not ve tür (Alan/Havuz) bilgileriyle ekleyin, düzenleyin veya silin. Gelişmiş Filtreleme: Dersleri döneme veya harf notuna göre anlık olarak filtreleyerek görüntüleyin. AGNO ve İstatistikler: Genel Ağırlıklı Not Ortalaması (AGNO/GNO) hesaplama. Toplam kredi takibi. Dönem bazlı ortalama ve başarı grafiği. Sınav Takibi: Yaklaşan sınavlarınızı ve kalan gün sayısını “Genel Durum” ekranında takip edin. Veri Yönetimi: Verileri JSON formatında otomatik kaydetme. Yedekleme (Dışa Aktar) ve Geri Yükleme (İçe Aktar) seçenekleri. PDF Çıktısı: Transkript benzeri akademik durum raporu oluşturma. Modern Arayüz: Tokyo Midnight temalı karanlık mod. Açık/Koyu tema desteği. Responsive ve estetik tasarım. 🛠️ Teknolojiler Bu proje aşağıdaki teknolojiler kullanılarak geliştirilmiştir:">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-06T16:16:46+03:00">
+    <meta property="article:modified_time" content="2026-02-06T16:16:46+03:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="PyQt6">
+    <meta property="article:tag" content="Projelerim">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Akademik Takip Sistemi (ATS) v3.2">
+<meta name="twitter:description" content="Açıklama
+Akademik Takip Sistemi (ATS), üniversite öğrencilerinin ders notlarını, ortalamalarını ve akademik başarılarını takip etmelerini sağlayan modern ve kullanıcı dostu bir masaüstü uygulamasıdır. Python ve PyQt6 kullanılarak geliştirilmiştir.
+🚀 Özellikler
+
+Ders Yönetimi: Derslerinizi dönem, kredi, not ve tür (Alan/Havuz) bilgileriyle ekleyin, düzenleyin veya silin.
+Gelişmiş Filtreleme: Dersleri döneme veya harf notuna göre anlık olarak filtreleyerek görüntüleyin.
+AGNO ve İstatistikler:
+
+Genel Ağırlıklı Not Ortalaması (AGNO/GNO) hesaplama.
+Toplam kredi takibi.
+Dönem bazlı ortalama ve başarı grafiği.
+
+
+Sınav Takibi: Yaklaşan sınavlarınızı ve kalan gün sayısını &ldquo;Genel Durum&rdquo; ekranında takip edin.
+Veri Yönetimi:
+
+Verileri JSON formatında otomatik kaydetme.
+Yedekleme (Dışa Aktar) ve Geri Yükleme (İçe Aktar) seçenekleri.
+PDF Çıktısı: Transkript benzeri akademik durum raporu oluşturma.
+
+
+Modern Arayüz:
+
+Tokyo Midnight temalı karanlık mod.
+Açık/Koyu tema desteği.
+Responsive ve estetik tasarım.
+
+
+
+🛠️ Teknolojiler
+Bu proje aşağıdaki teknolojiler kullanılarak geliştirilmiştir:">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://bayisca.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Akademik Takip Sistemi (ATS) v3.2",
+      "item": "https://bayisca.github.io/posts/akademik-takip-sistemi/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Akademik Takip Sistemi (ATS) v3.2",
+  "name": "Akademik Takip Sistemi (ATS) v3.2",
+  "description": "Açıklama Akademik Takip Sistemi (ATS), üniversite öğrencilerinin ders notlarını, ortalamalarını ve akademik başarılarını takip etmelerini sağlayan modern ve kullanıcı dostu bir masaüstü uygulamasıdır. Python ve PyQt6 kullanılarak geliştirilmiştir.\n🚀 Özellikler Ders Yönetimi: Derslerinizi dönem, kredi, not ve tür (Alan/Havuz) bilgileriyle ekleyin, düzenleyin veya silin. Gelişmiş Filtreleme: Dersleri döneme veya harf notuna göre anlık olarak filtreleyerek görüntüleyin. AGNO ve İstatistikler: Genel Ağırlıklı Not Ortalaması (AGNO/GNO) hesaplama. Toplam kredi takibi. Dönem bazlı ortalama ve başarı grafiği. Sınav Takibi: Yaklaşan sınavlarınızı ve kalan gün sayısını \u0026ldquo;Genel Durum\u0026rdquo; ekranında takip edin. Veri Yönetimi: Verileri JSON formatında otomatik kaydetme. Yedekleme (Dışa Aktar) ve Geri Yükleme (İçe Aktar) seçenekleri. PDF Çıktısı: Transkript benzeri akademik durum raporu oluşturma. Modern Arayüz: Tokyo Midnight temalı karanlık mod. Açık/Koyu tema desteği. Responsive ve estetik tasarım. 🛠️ Teknolojiler Bu proje aşağıdaki teknolojiler kullanılarak geliştirilmiştir:\n",
+  "keywords": [
+    "Python", "PyQt6", "Projelerim"
+  ],
+  "articleBody": "Açıklama Akademik Takip Sistemi (ATS), üniversite öğrencilerinin ders notlarını, ortalamalarını ve akademik başarılarını takip etmelerini sağlayan modern ve kullanıcı dostu bir masaüstü uygulamasıdır. Python ve PyQt6 kullanılarak geliştirilmiştir.\n🚀 Özellikler Ders Yönetimi: Derslerinizi dönem, kredi, not ve tür (Alan/Havuz) bilgileriyle ekleyin, düzenleyin veya silin. Gelişmiş Filtreleme: Dersleri döneme veya harf notuna göre anlık olarak filtreleyerek görüntüleyin. AGNO ve İstatistikler: Genel Ağırlıklı Not Ortalaması (AGNO/GNO) hesaplama. Toplam kredi takibi. Dönem bazlı ortalama ve başarı grafiği. Sınav Takibi: Yaklaşan sınavlarınızı ve kalan gün sayısını “Genel Durum” ekranında takip edin. Veri Yönetimi: Verileri JSON formatında otomatik kaydetme. Yedekleme (Dışa Aktar) ve Geri Yükleme (İçe Aktar) seçenekleri. PDF Çıktısı: Transkript benzeri akademik durum raporu oluşturma. Modern Arayüz: Tokyo Midnight temalı karanlık mod. Açık/Koyu tema desteği. Responsive ve estetik tasarım. 🛠️ Teknolojiler Bu proje aşağıdaki teknolojiler kullanılarak geliştirilmiştir:\nDil: Python 3.x Arayüz: PyQt6 (Modern GUI Framework) Veri Saklama: JSON (Yerel depolama) 📂 Proje Yapısı Proje, kodun yönetilebilirliğini artırmak için modüler bir yapıda tasarlanmıştır:\nmain.py: Uygulamanın giriş noktası. backend/: Veri yönetimi ve iş mantığı. frontend/: Kullanıcı arayüzü dosyaları. assets/: İkonlar ve görsel kaynaklar. data/: Kullanıcı verilerinin saklandığı dizin. 🖼️ Ekran Görüntüleri 📥 Uygulamayı İndir ATS v3.2 sürümünü bilgisayarınıza indirip anında kullanmaya başlamak için tıklayın:\n🚀 ATS’yi İndir\nNot: Kurulum gerektirmez, indirip çift tıklamanız yeterlidir. Windows Defender yazısına aldanmayın yine de çalıştıra basın\n👨‍💻 Geliştirici Geliştirici: İsmail Can Anlaş Versiyon: 3.2 Not: Bu proje eğitim ve kişisel kullanım amaçlı geliştirilmiştir.\n",
+  "wordCount" : "233",
+  "inLanguage": "en",
+  "datePublished": "2026-02-06T16:16:46+03:00",
+  "dateModified": "2026-02-06T16:16:46+03:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bayisca.github.io/posts/akademik-takip-sistemi/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "İsmail Can Anlaş",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bayisca.github.io/logo.jpeg"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bayisca.github.io/" accesskey="h" title="İsmail Can (Alt + H)">
+                <img src="https://bayisca.github.io/logo.jpeg" alt="" aria-label="logo"
+                    height="30">İsmail Can</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Akademik Takip Sistemi (ATS) v3.2
+    </h1>
+    <div class="post-meta"><span title='2026-02-06 16:16:46 +0300 +03'>February 6, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="açıklama">Açıklama<a hidden class="anchor" aria-hidden="true" href="#açıklama">#</a></h1>
+<p>Akademik Takip Sistemi (ATS), üniversite öğrencilerinin ders notlarını, ortalamalarını ve akademik başarılarını takip etmelerini sağlayan modern ve kullanıcı dostu bir masaüstü uygulamasıdır. Python ve PyQt6 kullanılarak geliştirilmiştir.</p>
+<h2 id="-özellikler">🚀 Özellikler<a hidden class="anchor" aria-hidden="true" href="#-özellikler">#</a></h2>
+<ul>
+<li><strong>Ders Yönetimi:</strong> Derslerinizi dönem, kredi, not ve tür (Alan/Havuz) bilgileriyle ekleyin, düzenleyin veya silin.</li>
+<li><strong>Gelişmiş Filtreleme:</strong> Dersleri döneme veya harf notuna göre anlık olarak filtreleyerek görüntüleyin.</li>
+<li><strong>AGNO ve İstatistikler:</strong>
+<ul>
+<li>Genel Ağırlıklı Not Ortalaması (AGNO/GNO) hesaplama.</li>
+<li>Toplam kredi takibi.</li>
+<li>Dönem bazlı ortalama ve başarı grafiği.</li>
+</ul>
+</li>
+<li><strong>Sınav Takibi:</strong> Yaklaşan sınavlarınızı ve kalan gün sayısını &ldquo;Genel Durum&rdquo; ekranında takip edin.</li>
+<li><strong>Veri Yönetimi:</strong>
+<ul>
+<li>Verileri JSON formatında otomatik kaydetme.</li>
+<li>Yedekleme (Dışa Aktar) ve Geri Yükleme (İçe Aktar) seçenekleri.</li>
+<li><strong>PDF Çıktısı:</strong> Transkript benzeri akademik durum raporu oluşturma.</li>
+</ul>
+</li>
+<li><strong>Modern Arayüz:</strong>
+<ul>
+<li><strong>Tokyo Midnight</strong> temalı karanlık mod.</li>
+<li>Açık/Koyu tema desteği.</li>
+<li>Responsive ve estetik tasarım.</li>
+</ul>
+</li>
+</ul>
+<h2 id="-teknolojiler">🛠️ Teknolojiler<a hidden class="anchor" aria-hidden="true" href="#-teknolojiler">#</a></h2>
+<p>Bu proje aşağıdaki teknolojiler kullanılarak geliştirilmiştir:</p>
+<ul>
+<li><strong>Dil:</strong> Python 3.x</li>
+<li><strong>Arayüz:</strong> PyQt6 (Modern GUI Framework)</li>
+<li><strong>Veri Saklama:</strong> JSON (Yerel depolama)</li>
+</ul>
+<h2 id="-proje-yapısı">📂 Proje Yapısı<a hidden class="anchor" aria-hidden="true" href="#-proje-yapısı">#</a></h2>
+<p>Proje, kodun yönetilebilirliğini artırmak için modüler bir yapıda tasarlanmıştır:</p>
+<ul>
+<li><code>main.py</code>: Uygulamanın giriş noktası.</li>
+<li><code>backend/</code>: Veri yönetimi ve iş mantığı.</li>
+<li><code>frontend/</code>: Kullanıcı arayüzü dosyaları.</li>
+<li><code>assets/</code>: İkonlar ve görsel kaynaklar.</li>
+<li><code>data/</code>: Kullanıcı verilerinin saklandığı dizin.</li>
+</ul>
+<h2 id="-ekran-görüntüleri">🖼️ Ekran Görüntüleri<a hidden class="anchor" aria-hidden="true" href="#-ekran-görüntüleri">#</a></h2>
+<p><img alt="ATS Projesi Ekran Görüntüsü" loading="lazy" src="/images/ders-listesi.png">
+<img alt="ATS Projesi Ekran Görüntüsü" loading="lazy" src="/images/genel-durum.png">
+<img alt="ATS Projesi Ekran Görüntüsü" loading="lazy" src="/images/hakkinda.png">
+<img alt="ATS Projesi Ekran Görüntüsü" loading="lazy" src="/images/ders-ekle.png"></p>
+<h2 id="-uygulamayı-indir">📥 Uygulamayı İndir<a hidden class="anchor" aria-hidden="true" href="#-uygulamayı-indir">#</a></h2>
+<p>ATS v3.2 sürümünü bilgisayarınıza indirip anında kullanmaya başlamak için tıklayın:</p>
+<p><a href="/Akademik%20Takip%20Sistemi.exe">🚀 ATS&rsquo;yi İndir</a></p>
+<p><em>Not: Kurulum gerektirmez, indirip çift tıklamanız yeterlidir. Windows Defender yazısına aldanmayın yine de çalıştıra basın</em></p>
+<h2 id="-geliştirici">👨‍💻 Geliştirici<a hidden class="anchor" aria-hidden="true" href="#-geliştirici">#</a></h2>
+<ul>
+<li><strong>Geliştirici:</strong> İsmail Can Anlaş</li>
+<li><strong>Versiyon:</strong> 3.2</li>
+</ul>
+<hr>
+<p><em>Not: Bu proje eğitim ve kişisel kullanım amaçlı geliştirilmiştir.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://bayisca.github.io/tags/python/">Python</a></li>
+      <li><a href="https://bayisca.github.io/tags/pyqt6/">PyQt6</a></li>
+      <li><a href="https://bayisca.github.io/tags/projelerim/">Projelerim</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://bayisca.github.io/">İsmail Can Anlaş</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
