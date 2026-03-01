@@ -35,3 +35,6 @@ theme = "PaperMod"
   [[params.socialIcons]]
     name = "email"
     url = "mailto:can2323fb@gmail.com"
+
+  [params]
+    googleAnalytics = G-NZRX6P5GXJ 
