@@ -6,6 +6,9 @@ theme = "PaperMod"
 # --- BURAYI EN ÜSTE ALALIM ---
 googleAnalytics = "G-NZRX6P5GXJ" # Tırnak ekledik ve en üste aldık
 
+[author]
+  name = "İsmail Can Anlaş"
+
 [params]
   defaultTheme = "auto"
 
