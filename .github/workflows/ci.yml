@@ -1,0 +1,28 @@
+name: Focus-Track Java Check (CI)
+
+on:
+  push:
+    branches: [ "main" ] # Sadece ana kola kod atınca çalışır
+  pull_request:
+    branches: [ "main" ] # Birisi kod birleştirmek isterse de kontrol eder
+
+jobs:
+  check-logic:
+    runs-on: ubuntu-latest # İşlemi Linux üzerinde yap
+
+    steps:
+    - name: Kodu GitHub'dan Çek
+      uses: actions/checkout@v4
+    
+    - name: Java Kurulumu (JDK 17)
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven # Maven paketlerini önbelleğe alarak hızlandırır
+
+    - name: Projeyi Derle (Build)
+      run: mvn -B compile --file pom.xml 
+
+    - name: Testleri Çalıştır (Varsa)
+      run: mvn test
