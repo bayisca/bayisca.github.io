@@ -3,20 +3,23 @@ languageCode = 'en-us'
 title = 'İsmail Can Anlaş'
 theme = "PaperMod"
 
+# --- BURAYI EN ÜSTE ALALIM ---
+googleAnalytics = "G-NZRX6P5GXJ" # Tırnak ekledik ve en üste aldık
+
 [params]
   defaultTheme = "auto"
 
-  # 1. TARAYICI SEKMESİ İKONU (Favicon)
+  # 1. TARAYICI SEKMESİ İKONU
   [params.assets]
     favicon = "/logo.jpeg"
     favicon16x16 = "/logo.jpeg"
     favicon32x32 = "/logo.jpeg"
 
-# 2. SOL ÜSTTEKİ İSİM YANI İKONU (Label Icon)
+  # 2. SOL ÜSTTEKİ İSİM YANI İKONU
   [params.label]
-    text = "İsmail Can"      # Logunun yanında yazacak isim
-    icon = "/logo.jpeg"       # Logonun adresi
-    iconHeight = 30          # Logonun boyutu 
+    text = "İsmail Can"
+    icon = "/logo.jpeg"
+    iconHeight = 30 
 
   # --- GİRİŞ KARTI ---
   [params.homeInfoParams]
@@ -35,6 +38,3 @@ theme = "PaperMod"
   [[params.socialIcons]]
     name = "email"
     url = "mailto:can2323fb@gmail.com"
-
-  [params]
-    googleAnalytics = G-NZRX6P5GXJ 
