@@ -1,28 +1,23 @@
-name: Focus-Track Java Check (CI)
+name: Hugo Site Check (CI)
 
 on:
   push:
-    branches: [ "main" ] # Sadece ana kola kod atınca çalışır
-  pull_request:
-    branches: [ "main" ] # Birisi kod birleştirmek isterse de kontrol eder
+    branches: [ "main" ]
 
 jobs:
-  check-logic:
-    runs-on: ubuntu-latest # İşlemi Linux üzerinde yap
-
+  build:
+    runs-on: ubuntu-latest
     steps:
-    - name: Kodu GitHub'dan Çek
-      uses: actions/checkout@v4
-    
-    - name: Java Kurulumu (JDK 17)
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: maven # Maven paketlerini önbelleğe alarak hızlandırır
+      - name: Kodu Çek
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive  # Temaların (PaperMod) inmesi için şart!
 
-    - name: Projeyi Derle (Build)
-      run: mvn -B compile --file pom.xml 
+      - name: Hugo Kurulumu
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true # PaperMod bazen extended sürüm ister
 
-    - name: Testleri Çalıştır (Varsa)
-      run: mvn test
+      - name: Siteyi Derle
+        run: hugo --gc --minify
