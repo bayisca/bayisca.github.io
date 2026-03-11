@@ -1,43 +1,49 @@
-baseURL = "https://bayisca.github.io/"
-languageCode = 'en-us'
-title = 'İsmail Can Anlaş'
-theme = "PaperMod"
+baseURL: "https://bayisca.github.io/"
+languageCode: "en-us"
+title: "İsmail Can Anlaş"
+theme: "PaperMod"
+googleAnalytics: "G-NZRX6P5GXJ"
 
-# --- BURAYI EN ÜSTE ALALIM ---
-googleAnalytics = "G-NZRX6P5GXJ" # Tırnak ekledik ve en üste aldık
+# 1. Seviye Yazar Tanımı (RSS hatasını çözer)
+author:
+  name: "İsmail Can Anlaş"
 
-[author]
-  name = "İsmail Can Anlaş"
+params:
+  # 2. Seviye Yazar Tanımı (Tema ayarları için)
+  author: "İsmail Can Anlaş"
+  defaultTheme: "auto"
+  showCodeCopyButtons: true
+  showReadingTime: true
 
-[params]
-  defaultTheme = "auto"
+  # Favicon Ayarları
+  assets:
+    favicon: "/logo.jpeg"
+    favicon16x16: "/logo.jpeg"
+    favicon32x32: "/logo.jpeg"
 
-  # 1. TARAYICI SEKMESİ İKONU
-  [params.assets]
-    favicon = "/logo.jpeg"
-    favicon16x16 = "/logo.jpeg"
-    favicon32x32 = "/logo.jpeg"
+  # Sol Üst Logo ve İsim
+  label:
+    text: "İsmail Can"
+    icon: "/logo.jpeg"
+    iconHeight: 30 
 
-  # 2. SOL ÜSTTEKİ İSİM YANI İKONU
-  [params.label]
-    text = "İsmail Can"
-    icon = "/logo.jpeg"
-    iconHeight = 30 
+  # Ana Sayfa Giriş Kartı
+  homeInfoParams:
+    Title: "Merhaba, Ben İsmail 👋"
+    Content: "Python ve PyQt6 ile masaüstü uygulamaları geliştiriyorum. Projelerimi ve notlarımı burada paylaşıyorum."
 
-  # --- GİRİŞ KARTI ---
-  [params.homeInfoParams]
-    Title = "Merhaba, Ben İsmail 👋"
-    Content = "Python ve PyQt6 ile masaüstü uygulamaları geliştiriyorum. Projelerimi ve notlarımı burada paylaşıyorum."
+  # Sosyal Medya İkonları
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/bayisca"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/ismail-can-anla%C5%9F-270235242/"
+    - name: "email"
+      url: "mailto:can2323fb@gmail.com"
 
-  # --- SOSYAL MEDYA ---
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/bayisca"
-
-  [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://www.linkedin.com/in/ismail-can-anla%C5%9F-270235242/"
-
-  [[params.socialIcons]]
-    name = "email"
-    url = "mailto:can2323fb@gmail.com"
+# RSS hatası devam ederse diye ek emniyet
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
