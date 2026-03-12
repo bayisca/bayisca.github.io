@@ -30,7 +30,7 @@ params:
   # Ana Sayfa Giriş Kartı
   homeInfoParams:
     Title: "Merhaba, Ben İsmail 👋"
-    Content: "Python ve PyQt6 ile masaüstü uygulamaları geliştiriyorum. Projelerimi ve notlarımı burada paylaşıyorum."
+    Content: "1.Sınıf bilgisayar mühendisliği öğrencisiyim ve yazılım geliştirme konusunda tutkuluyum. Bu blogda, öğrendiğim yeni teknolojileri, projelerimi ve yazılım dünyasındaki deneyimlerimi paylaşmayı planlıyorum. Takipte kalın!"
 
   # Sosyal Medya İkonları
   socialIcons:
