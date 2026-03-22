@@ -19,7 +19,7 @@ Akademik Takip Sistemi (ATS), üniversite öğrencilerinin ders notlarını, ort
     * Dönem bazlı ortalama ve başarı grafiği.
 * **Sınav Takibi:** Yaklaşan sınavlarınızı ve kalan gün sayısını "Genel Durum" ekranında takip edin.
 * **Veri Yönetimi:**
-    * Verileri JSON formatında otomatik kaydetme.
+    * Verileri JSON formatında otomatik kaydetme. 
     * Yedekleme (Dışa Aktar) ve Geri Yükleme (İçe Aktar) seçenekleri.
     * **PDF Çıktısı:** Transkript benzeri akademik durum raporu oluşturma.
 * **Modern Arayüz:**
