@@ -1,5 +1,5 @@
 ---
-title: "Akademik Takip Sistemi (ATS) v3.2"
+title: "Akademik Takip Sistemi (ATS) v3.3"
 date: 2026-02-06T16:16:46+03:00
 draft: false
 tags: ["Python", "PyQt6", "Projelerim"]
@@ -63,7 +63,12 @@ ATS v3.2 sürümünü bilgisayarınıza indirip anında kullanmaya başlamak iç
 ## 👨‍💻 Geliştirici
 
 * **Geliştirici:** İsmail Can Anlaş
-* **Versiyon:** 3.2
+* **Versiyon:** 3.3
+
+## Versionlar
+
+    * 3.3 '21.03.2026'
+    
 
 ---
 *Not: Bu proje eğitim ve kişisel kullanım amaçlı geliştirilmiştir.*
