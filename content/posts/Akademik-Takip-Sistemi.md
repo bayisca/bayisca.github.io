@@ -1,39 +1,28 @@
 ---
-title: "Akademik Takip Sistemi (ATS) v1.3"
+title: "Akademik Takip Sistemi (ATS) v1.4"
 date: 2026-02-06T16:16:46+03:00
 draft: false
 tags: ["Python", "PyQt6", "Projelerim"]
 ---
 
-# Açıklama
+# 🎓 Akademik Takip Sistemi (ATS)
 
-Akademik Takip Sistemi (ATS), üniversite öğrencilerinin ders notlarını, ortalamalarını ve akademik başarılarını takip etmelerini sağlayan modern ve kullanıcı dostu bir masaüstü uygulamasıdır. Python ve PyQt6 kullanılarak geliştirilmiştir.
+Üniversite hayatınızı kolaylaştırmak için tasarlanmış; derslerinizi, devamsızlıklarınızı ve akademik başarınızı tek merkezden yönetmenizi sağlayan modern bir takip asistanıdır.
 
-## 🚀 Özellikler
+## 🚀 v1.4 Yenilikleri ve Özellikler
 
-* **Ders Yönetimi:** Derslerinizi dönem, kredi, not ve tür (Alan/Havuz) bilgileriyle ekleyin, düzenleyin veya silin.
-* **Gelişmiş Filtreleme:** Dersleri döneme veya harf notuna göre anlık olarak filtreleyerek görüntüleyin.
-* **AGNO ve İstatistikler:**
-    * Genel Ağırlıklı Not Ortalaması (AGNO/GNO) hesaplama.
-    * Toplam kredi takibi.
-    * Dönem bazlı ortalama ve başarı grafiği.
-* **Sınav Takibi:** Yaklaşan sınavlarınızı ve kalan gün sayısını "Genel Durum" ekranında takip edin.
-* **Veri Yönetimi:**
-    * Verileri JSON formatında otomatik kaydetme. 
-    * Yedekleme (Dışa Aktar) ve Geri Yükleme (İçe Aktar) seçenekleri.
-    * **PDF Çıktısı:** Transkript benzeri akademik durum raporu oluşturma.
-* **Modern Arayüz:**
-    * **Tokyo Midnight** temalı karanlık mod.
-    * Açık/Koyu tema desteği.
-    * Responsive ve estetik tasarım.
+*   📅 **Haftalık Ders Programı:** Görsel ve interaktif yeni nesil program arayüzü. Derslere çift tıklayarak anında düzenleme.
+*   🚦 **Akıllı Devamsızlık Takibi:** Ders programı ile entegre, zorunluluk muafiyeti destekli limit kontrolü ve görsel uyarı sistemi.
+*   📊 **Akademik Analiz:** Anlık AGNO hesaplama, dönem ortalaması takibi ve başarı istatistikleri.
+*   🌓 **Dinamik Tema Motoru:** Tokyo Midnight (Karanlık) ve Aydınlık mod arasında tam uyumlu, göz yormayan tasarım.
+*   📄 **Raporlama:** Tek tıkla PDF formatında akademik durum belgesi (Transkript özeti) oluşturma.
+*   💾 **Veri Güvenliği:** Otomatik JSON yedekleme ve manuel dosya dışa/içe aktarımı.
 
 ## 🛠️ Teknolojiler
 
-Bu proje aşağıdaki teknolojiler kullanılarak geliştirilmiştir:
-
-* **Dil:** Python 3.x
-* **Arayüz:** PyQt6 (Modern GUI Framework)
-* **Veri Saklama:** JSON (Yerel depolama)
+*   **Dil:** Python 3.x
+*   **Arayüz:** PyQt6 (Modern & Responsive GUI)
+*   **Depolama:** JSON (Hızlı ve Taşınabilir Yerel Veritabanı)
 
 ## 📂 Proje Yapısı
 
@@ -54,22 +43,24 @@ Proje, kodun yönetilebilirliğini artırmak için modüler bir yapıda tasarlan
 
 ## 📥 Uygulamayı İndir
 
-ATS v3.2 sürümünü bilgisayarınıza indirip anında kullanmaya başlamak için tıklayın:
+ATS v1.4 sürümünü bilgisayarınıza indirip anında kullanmaya başlamak için tıklayın:
 
 [🚀 ATS'yi İndir](/Akademik%20Takip%20Sistemi.exe)
 
-*Not: Kurulum gerektirmez, indirip çift tıklamanız yeterlidir. Windows Defender yazısına aldanmayın yine de çalıştıra basın*
+> [!TIP]
+> **Windows Defender Notu:** Uygulama imzalanmamış bir .exe olduğu için Windows başlangıçta uyarı verebilir. "Ek Bilgi" -> "Yine de Çalıştır" diyerek güvenle başlatabilirsiniz.
 
 ## 👨‍💻 Geliştirici
 
 * **Geliştirici:** İsmail Can Anlaş
-* **Versiyon:** 1.3
+* **Versiyon:** 1.4
 
-## Versionlar
-
-    * 1.3 '21.03.2026'
-    
-
+## 📜 Versiyon Geçmişi
+| Versiyon | Tarih | Yenilikler |
+| :--- | :--- | :--- |
+| **v1.4** | **17.04.2026** | **Ders Programı, Akıllı Devamsızlık ve Tema İyileştirmeleri** |
+| v1.3 | 21.03.2026 | Genel performans ve sınav takip sistemi |
+| v1.0 | 06.02.2026 | İlk kararlı sürüm yayını |
 ---
 *Not: Bu proje eğitim ve kişisel kullanım amaçlı geliştirilmiştir.*
 
