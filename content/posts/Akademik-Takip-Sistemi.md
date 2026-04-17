@@ -5,8 +5,6 @@ draft: false
 tags: ["Python", "PyQt6", "Projelerim"]
 ---
 
-# 🎓 Akademik Takip Sistemi (ATS)
-
 Üniversite hayatınızı kolaylaştırmak için tasarlanmış; derslerinizi, devamsızlıklarınızı ve akademik başarınızı tek merkezden yönetmenizi sağlayan modern bir takip asistanıdır.
 
 ## 🚀 v1.4 Yenilikleri ve Özellikler
@@ -38,6 +36,7 @@ Proje, kodun yönetilebilirliğini artırmak için modüler bir yapıda tasarlan
 
 ![ATS Projesi Ekran Görüntüsü](/images/ders-listesi.png)
 ![ATS Projesi Ekran Görüntüsü](/images/genel-durum.png)
+![ATS Projesi Ekran Görüntüsü](/images/ders-programi.png)
 ![ATS Projesi Ekran Görüntüsü](/images/hakkinda.png)
 ![ATS Projesi Ekran Görüntüsü](/images/ders-ekle.png)
 
