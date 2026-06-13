@@ -5,32 +5,47 @@ draft: false
 tags: ["Python", "PyQt6", "Projelerim"]
 ---
 
-Üniversite hayatınızı kolaylaştırmak için tasarlanmış; derslerinizi, devamsızlıklarınızı ve akademik başarınızı tek merkezden yönetmenizi sağlayan modern bir takip asistanıdır.
+Üniversite hayatınızı kolaylaştırmak için tasarlanmış; derslerinizi, devamsızlıklarınızı ve akademik başarınızı tek merkezden yönetmenizi sağlayan modern bir masaüstü uygulamasıdır.
 
 ## 🚀 v1.4 Yenilikleri ve Özellikler
 
-*   📅 **Haftalık Ders Programı:** Görsel ve interaktif yeni nesil program arayüzü. Derslere çift tıklayarak anında düzenleme.
-*   🚦 **Akıllı Devamsızlık Takibi:** Ders programı ile entegre, zorunluluk muafiyeti destekli limit kontrolü ve görsel uyarı sistemi.
-*   📊 **Akademik Analiz:** Anlık AGNO hesaplama, dönem ortalaması takibi ve başarı istatistikleri.
-*   🌓 **Dinamik Tema Motoru:** Tokyo Midnight (Karanlık) ve Aydınlık mod arasında tam uyumlu, göz yormayan tasarım.
-*   📄 **Raporlama:** Tek tıkla PDF formatında akademik durum belgesi (Transkript özeti) oluşturma.
-*   💾 **Veri Güvenliği:** Otomatik JSON yedekleme ve manuel dosya dışa/içe aktarımı.
 
-## 🛠️ Teknolojiler
+*   📅 **Haftalık Ders Programı:** Görsel ve interaktif program arayüzü. Anlık saat çizgisi, bugün vurgusu ve çift tıklama ile hızlı düzenleme.
+*   🚦 **Akıllı Devamsızlık Takibi:** Ders programı kartları üzerinde anlık devamsızlık gösterimi; zorunluluk muafiyeti desteği ve renk kodlu uyarı sistemi.
+*   📊 **Akademik Analiz:** Anlık AGNO hesaplama, dönem ortalamaları ve grafik bazlı başarı takibi.
+*   🗓️ **Sınav & Quiz Takvimi:** Sınav ve quiz tarihlerinin ders programına otomatik entegrasyonu; yaklaşan sınav kartları ve kalan gün sayacı.
+*   🎯 **Hedef Harf & Final Hesaplayıcı:** Her ders için hedef not belirleyebilme ve gereken final notunu hesaplama.
+*   🌓 **Dinamik Tema Motoru:** Tokyo Midnight (Karanlık) ve Aydınlık mod; tam uyumlu, göz yormayan tasarım.
+*   📄 **Raporlama:** Dönem bazlı PDF transkript özeti oluşturma.
+*   🎓 **Gazi OBSS Entegrasyonu:** OBSS üzerinden ders ve not bilgilerini otomatik olarak içe aktarma (Beta).
+*   💾 **Veri Güvenliği:** Veriler `AppData` altında güvenli biçimde saklanır. Manuel yedekleme ve geri yükleme desteği.
 
+# 🛠️ Teknolojiler
 *   **Dil:** Python 3.x
 *   **Arayüz:** PyQt6 (Modern & Responsive GUI)
-*   **Depolama:** JSON (Hızlı ve Taşınabilir Yerel Veritabanı)
-
+*   **Raporlama:** PyQt6 QPrinter — PDF çıktısı
+*   **Ağ:** `requests` kütüphanesi — OBSS oturum yönetimi
+*   **Depolama:** JSON (AppData klasöründe yerel veritabanı)
 ## 📂 Proje Yapısı
-
 Proje, kodun yönetilebilirliğini artırmak için modüler bir yapıda tasarlanmıştır:
-
-* `main.py`: Uygulamanın giriş noktası.
-* `backend/`: Veri yönetimi ve iş mantığı.
-* `frontend/`: Kullanıcı arayüzü dosyaları.
-* `assets/`: İkonlar ve görsel kaynaklar.
-* `data/`: Kullanıcı verilerinin saklandığı dizin.
+```
+Akademik-Takip-Sistemi/
+├── main.py                  # Uygulamanın giriş noktası
+├── backend/
+│   ├── models.py            # Veri modelleri (Course, ScheduleEntry, SettingsManager)
+│   ├── logic.py             # İş mantığı ve veri yönetimi (AcademicManager)
+│   ├── report_manager.py    # PDF transkript oluşturma
+│   └── obs_sync.py          # Gazi OBSS oturum ve veri çekme motoru
+├── frontend/
+│   ├── main_window.py       # Ana pencere ve sekme yönetimi
+│   ├── schedule_view.py     # Haftalık ders programı görünümü
+│   ├── stats_view.py        # Genel akademik durum ve istatistikler
+│   ├── dialogs.py           # Tüm diyalog pencereleri (ders düzenleme, OBSS girişi vb.)
+│   ├── components.py        # Yeniden kullanılabilir bileşenler (GradeChart, ToggleSwitch)
+│   └── styles.py            # Tema renk paletleri ve QSS stilleri
+└── assets/
+    └── pencil_icon.ico      # Uygulama ikonu
+```
 
 ## 🖼️ Ekran Görüntüleri
 
