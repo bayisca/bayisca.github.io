@@ -1,7 +1,7 @@
 ---
 title: "Spotify Yeni Şarkı Takipçisi"
 date: 2026-07-29T19:13:55+03:00
-draft: true
+draft: false
 tags: ["Spotify", "Python", "Telegram", "GitHub Actions", "Projelerim"]
 ---
 
@@ -255,6 +255,12 @@ Bu proje, Spotify API ile çalışan basit ama pratik bir izleme sistemidir. Tem
 ## Resim
 
 ![Sarki Takipcisi Telegram Bildirimi](/images/sarki-takipcisi-telegram.png)
+
+## 📜 Versiyon Geçmişi
+
+| Versiyon | Tarih | Yenilikler |
+| :--- | :--- | :--- |
+| **v1.0** | **29.07.2026** | **İlk Sürüm** |
 
 Bu yapı, küçük ölçekli otomasyon görevleri için oldukça uygun bir örnektir.
 
